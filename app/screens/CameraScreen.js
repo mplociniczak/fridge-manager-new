@@ -24,7 +24,7 @@ export default function CameraScreen({ navigation }) {
     if (permission?.granted) {
       const interval = setInterval(() => {
         sendFrameToModel();
-      }, 1000); // Co 3 sekundy
+      }, 3000); // Co 3 sekundy
 
       return () => clearInterval(interval);
     }
